@@ -438,7 +438,7 @@ elif st.session_state.page == "Restaurant":
     # ---------------- HERO / AMBIENCE ----------------
     st.markdown("### Experience Fine Dining")
 
-    cols = st.columns(9)
+    cols = st.columns(3)
     cols[0].image(r"assets/restpic1.jpg", width=250)
     cols[1].image(r"assets/Food.jpg", width=250)
     cols[2].image(r"assets/food2.jpg",width=250)
