@@ -187,7 +187,7 @@ col1, col2, col3, col4, col5 = st.columns([2.5,1,1,1,1])
 
 with col1:
     st.image(
-        "C:/Users/sbiswaji/Downloads/218245014_109376818090070_8985566675702664760_n.jpg",
+        "assets/218245014_109376818090070_8985566675702664760_n.jpg",
         width=160
     )
 
@@ -207,7 +207,7 @@ with col5:
 # ================= HOME =================
 if st.session_state.page == "Home":
 
-    video_file = open(r"C:\Users\sbiswaji\Downloads\AQOlAru5UeiElOzBD5uYR5Z0C2qhbFkuD2PlVgk2G91cE2HvI-gbUTl-uyvfmHQXFgV1vVOEhTqfJN32fPhw3Tw86fUcAZReStU.mp4", "rb")
+    video_file = open(r"assets\AQOlAru5UeiElOzBD5uYR5Z0C2qhbFkuD2PlVgk2G91cE2HvI-gbUTl-uyvfmHQXFgV1vVOEhTqfJN32fPhw3Tw86fUcAZReStU.mp4", "rb")
     video_base64 = base64.b64encode(video_file.read()).decode()
 
     st.components.v1.html(f"""
@@ -302,9 +302,9 @@ if st.session_state.page == "Home":
     st.markdown("## Gallery")
 
     col1, col2, col3 = st.columns(3)
-    col1.image(r"C:\Users\sbiswaji\Downloads\2mont.jpg",width=250)
-    col2.image(r"C:\Users\sbiswaji\Downloads\1mont.jpg",width=250)
-    col3.image(r"C:\Users\sbiswaji\Downloads\3.Mont.jpg",width=250)
+    col1.image(r"assets\2mont.jpg",width=250)
+    col2.image(r"assets\3.Mont.jpg",width=250)
+    col3.image(r"assets\1mont.jpg",width=250)
 
 
 # ================= ROOMS =================
@@ -438,9 +438,9 @@ elif st.session_state.page == "Restaurant":
     st.markdown("### Experience Fine Dining")
 
     cols = st.columns(3)
-    cols[0].image(r"C:\Users\sbiswaji\Downloads\Food.jpg", width=250)
-    cols[1].image(r"C:\Users\sbiswaji\Downloads\food2.jpg", width=250)
-    cols[2].image(r"C:\Users\sbiswaji\Downloads\restpic1.jpg",width=250)
+    cols[0].image(r"assets\restpic1.jpg", width=250)
+    cols[1].image(r"assets\Food.jpg", width=250)
+    cols[2].image(r"assets\food2.jpg",width=250)
 #     cols[3].image("https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg", use_container_width=True)
 
     # ---------------- MENU SLIDER ----------------
@@ -448,9 +448,9 @@ elif st.session_state.page == "Restaurant":
     st.markdown("### 📜 Our Menu")
 
     menu_images = [
-        r"C:\Users\sbiswaji\Downloads\men1.jpg",
-        r"C:\Users\sbiswaji\Downloads\menu2mont.jpg",
-        r"C:\Users\sbiswaji\Downloads\men1.jpg"
+        r"assets\men1.jpg",
+        r"assets\montmen1.jpg",
+        r"assets\menu2mont.jpg"
     ]
 
     # selection (acts like clickable thumbnails)
@@ -513,8 +513,8 @@ elif st.session_state.page == "Banquet":
     st.markdown("### Perfect for Small Events & Gatherings")
 
     col1, col2 = st.columns(2)
-    col1.image(r"C:\Users\sbiswaji\Downloads\banqmont.jpg", width=250)
-    col2.image(r"C:\Users\sbiswaji\Downloads\banqmon2.jpg", width=250)
+    col1.image(r"assets\banqmont.jpg", width=250)
+    col2.image(r"assets\banqmon2.jpg", width=250)
 
     st.markdown("---")
 
