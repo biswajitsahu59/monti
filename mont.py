@@ -513,8 +513,8 @@ elif st.session_state.page == "Banquet":
     st.markdown("### Perfect for Small Events & Gatherings")
 
     col1, col2 = st.columns(2)
-    col1.image(r"assets\banqmont.jpg", width=250)
-    col2.image(r"assets\banqmon2.jpg", width=250)
+    col1.image(r"assets/banqmont.jpg", width=250)
+    col2.image(r"assets/banqmon2.jpg", width=250)
 
     st.markdown("---")
 
