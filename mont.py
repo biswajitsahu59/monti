@@ -450,16 +450,16 @@ elif st.session_state.page == "Restaurant":
 
     menu_images = [
         
-    r"assets/WhatsApp Image 2026-04-19 at 12.31.34 PM.jpeg"
-    r"assets/WhatsApp Image 2026-04-19 at 12.31.30 PM.jpeg"
-    r"assets/WhatsApp Image 2026-04-19 at 12.31.31 PM.jpeg"
+    r"assets/WhatsApp Image 2026-04-19 at 12.31.34 PM.jpeg",
+    r"assets/WhatsApp Image 2026-04-19 at 12.31.30 PM.jpeg",
+    r"assets/WhatsApp Image 2026-04-19 at 12.31.31 PM.jpeg",
     
-    r"assets/WhatsApp Image 2026-04-19 at 12.31.31 PM (1).jpeg"
-    r"assets/WhatsApp Image 2026-04-19 at 12.31.31 PM (2).jpeg"
-    r"assets/WhatsApp Image 2026-04-19 at 12.31.32 PM.jpeg"
-    r"assets/WhatsApp Image 2026-04-19 at 12.31.32 PM (1).jpeg"
-    r"assets/WhatsApp Image 2026-04-19 at 12.31.33 PM.jpeg"
-    r"assets/WhatsApp Image 2026-04-19 at 12.31.32 PM (2).jpeg"
+    r"assets/WhatsApp Image 2026-04-19 at 12.31.31 PM (1).jpeg",
+    r"assets/WhatsApp Image 2026-04-19 at 12.31.31 PM (2).jpeg",
+    r"assets/WhatsApp Image 2026-04-19 at 12.31.32 PM.jpeg",
+    r"assets/WhatsApp Image 2026-04-19 at 12.31.32 PM (1).jpeg",
+    r"assets/WhatsApp Image 2026-04-19 at 12.31.33 PM.jpeg",
+    r"assets/WhatsApp Image 2026-04-19 at 12.31.32 PM (2).jpeg",
     ]
 
     # selection (acts like clickable thumbnails)
