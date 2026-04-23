@@ -254,33 +254,40 @@ if st.session_state.page == "Home":
 
     # -------------------- BANNER SLIDER --------------------
 
+    import base64
+    
+    # ---------------- BANNER ----------------
     if "banner_index" not in st.session_state:
         st.session_state.banner_index = 0
-
+    
     banners = [
-        'assets/banner.png'
-        # "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-        # "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
-        # "https://images.pexels.com/photos/164595/hotel-room-bed-bedroom-164595.jpeg"
+        "assets/banner.png"
     ]
-
+    
     st.markdown("## 🔥 Offers & Updates")
-
-    # IMAGE (your HTML version - 80% centered)
+    
+    # 🔁 Convert local image → base64
+    def get_base64(img_path):
+        with open(img_path, "rb") as f:
+            return base64.b64encode(f.read()).decode()
+    
+    img_base64 = get_base64(banners[st.session_state.banner_index])
+    
+    # ✅ HTML IMAGE (works with local files now)
     st.markdown(f"""
     <div style="width:80%; margin:auto;">
-        <img src="{banners[st.session_state.banner_index]}" 
+        <img src="data:image/png;base64,{img_base64}" 
              style="width:100%; height:280px; object-fit:cover; border-radius:12px;">
     </div>
     """, unsafe_allow_html=True)
-
-    # BUTTONS (aligned under image)
+    
+    # ---------------- BUTTONS ----------------
     b1, b2, b3 = st.columns([3, 2, 3])
-
+    
     with b1:
         if st.button("⬅ Previous"):
             st.session_state.banner_index = (st.session_state.banner_index - 1) % len(banners)
-
+    
     with b3:
         if st.button("Next ➡"):
             st.session_state.banner_index = (st.session_state.banner_index + 1) % len(banners)
