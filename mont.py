@@ -277,7 +277,7 @@ if st.session_state.page == "Home":
     st.markdown(f"""
     <div style="width:80%; margin:auto;">
         <img src="data:image/png;base64,{img_base64}" 
-             style="width:100%; height:280px; object-fit:cover; border-radius:12px;">
+             style="width:100%; height:auto; object-fit:contain; border-radius:12px;"
     </div>
     """, unsafe_allow_html=True)
     
