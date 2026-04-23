@@ -258,9 +258,10 @@ if st.session_state.page == "Home":
         st.session_state.banner_index = 0
 
     banners = [
-        "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-        "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
-        "https://images.pexels.com/photos/164595/hotel-room-bed-bedroom-164595.jpeg"
+        'assets/banner.png'
+        # "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
+        # "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
+        # "https://images.pexels.com/photos/164595/hotel-room-bed-bedroom-164595.jpeg"
     ]
 
     st.markdown("## 🔥 Offers & Updates")
