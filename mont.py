@@ -275,9 +275,9 @@ if st.session_state.page == "Home":
     
     # ✅ HTML IMAGE (works with local files now)
     st.markdown(f"""
-    <div style="width:80%; margin:auto;">
+    <div style="width:80%; margin:auto; padding:20px 0; text-align:center;">
         <img src="data:image/png;base64,{img_base64}" 
-             style="width:100%; height:auto; object-fit:contain; border-radius:12px;"
+             style="width:100%; max-height:240px; object-fit:contain; border-radius:12px;">
     </div>
     """, unsafe_allow_html=True)
     
